@@ -80,15 +80,15 @@ ul {
   width: 98%;
   height: 330px;
   background: url("../images/top-image.png");
-  background-position: 40% 30%;
+  background-position: 40% 27%;
   border: 10px solid white;
 }
 
 .slideImage img {
-  width: 370px;
-  height: 270px;
+  width: 380px;
+  height: 240px;
   position: relative;
-  top: 30px;
+  top: 45px;
   left: 20px;
 }
 
