@@ -7,6 +7,7 @@ body {
 #mainContainer {
   width: 1000px;
   margin: auto;
+  z-index: 1;
 }
 
 .socialHeader {
@@ -67,6 +68,11 @@ ul {
   background-color: #B4292E;
   width: 240px;
   border-bottom: 3px solid #898784;
+}
+
+.navList li:before, .navList li:after {
+  content: "\2014";
+  margin: 0 12px;
 }
 
 .slideShow {
