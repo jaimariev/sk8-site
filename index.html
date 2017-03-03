@@ -2,39 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sk8r Shop</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <title>Sk8r Site</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <div id="overlay"></div>
   <div id="mainContainer">
-    <div class="socialHeader">
-      <p>SUBSCRIBE </p>
-      <ul class="socialMedia">
-        <li><a href="www.facebook.com" style="color: #737FAD"><i class="fa fa-facebook" aria-hidden="true" style="background-color: #445897"></i></a></li>
-        <li><a href="www.feed.com" style="color: #D4AD66"><i class="fa fa-rss" aria-hidden="true" style="background-color: #CC8F32"></i></a></li>
-        <li><a href="www.twitter.com" style="color: #829AC3"><i class="fa fa-twitter" aria-hidden="true" style="background-color: #6A8DC7"></i></a></li>
-        <li><a href="www.youtube.com" style="color: #C25551"><i class="fa fa-youtube" aria-hidden="true" style="background-color: #B2382D"></i></a></li>
-      </ul>
-    </div>
-    <div class="nav">
-      <ul class="navList">
-        <li> SK8T NEWS </li>
-        <li> SKATEBOARDERS </li>
-        <li> BOARD DESIGN </li>
-        <li> CONTACT US </li>
-      </ul>
-    </div>
-    <div class="slideShow">
-      <div class="slideImage">
-        <img src="images/peralta-logo.png">
+    <header>
+      <div class="socialContainer">
+        <p>SUBSCRIBE</p>
+        <ul class="socialMedia">
+          <li><a href="www.facebook.com" style="color: #737FAD"><i class="fa fa-facebook" aria-hidden="true" style="background-color: #445897"></i></a></li>
+          <li><a href="www.feed.com" style="color: #D4AD66"><i class="fa fa-rss" aria-hidden="true" style="background-color: #CC8F32"></i></a></li>
+          <li><a href="www.twitter.com" style="color: #829AC3"><i class="fa fa-twitter" aria-hidden="true" style="background-color: #6A8DC7"></i></a></li>
+          <li><a href="www.youtube.com" style="color: #C25551"><i class="fa fa-youtube" aria-hidden="true" style="background-color: #B2382D"></i></a></li>
+        </ul>
       </div>
-      <div class="imageSlide">
-      <input type="radio" name="imageOne" checked="" />
-      <input type="radio" name="imageTwo" />
-      <input type="radio" name="imageThree" />
+      <div class="navBar">
+        <nav>
+          <ul class="nav">
+            <li>sk8t news</li>
+            <li>skateboarders</li>
+            <li>board design</li>
+            <li>contact us</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="slideShow">
+      <div class="bgImg">
+        <div id="overlay2"></div>
+        <img class="overLapImg" src="images/peralta-logo.png" />
+      </div>
+      <div class="slideBtns"> 
+        <input type="radio" name="" checked="checked">
+        <input type="radio" name="">
+        <input type="radio" name="">
+      </div>
+    </div>
+    <div class="articles">
+
+      <div>
+        <h2>Tony Hawk Foundations Raises Big Money at Celeb Fundraiser</h2>
+        <span>October 10, 2013</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit qui amet officiis molestias deserunt. Inventore ipsam laboriosam, quos reiciendis illum odit neque exercitationem cum alias sunt ut ex doloremque hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div>
+        <h2>Rodney Mullen: Pop an olllie and innovate! (TED Talk)</h2>
+        <span>March 10, 2013</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit qui amet officiis molestias deserunt. Inventore ipsam laboriosam, quos reiciendis illum odit neque exercitationem cum alias sunt ut ex doloremque hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div>
+        <h2>Ray Barbee Talks 'Ban This'</h2>
+        <span>October 4, 2013</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit qui amet officiis molestias deserunt. Inventore ipsam laboriosam, quos reiciendis illum odit neque exercitationem cum alias sunt ut ex doloremque hic! Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+    </div>
+
+    <div id="sk8_container">
+      <div class="skatersImg">
+        <div class="skaters">lance <br/>mountain</div>
+        <div class="skaters">rodney <br /> mullen</div>
+        <div class="skaters">steve caballero</div>
+        <div class="skaters">tommy <br />guerrero</div>
+        <div class="arrow">skateboarders</div>
       </div>
     </div>
   </div>

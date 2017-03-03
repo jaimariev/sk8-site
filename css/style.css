@@ -1,99 +1,203 @@
+html {
+  box-sizing: border-box; 
+}
+
+*, *:before, *:after {
+  box-sizing: inherit; 
+}
+
 body {
-  background:url("../images/bg.jpg");
-  background-size: 100%;
-  font-family: verdana;
+  width: 100%;
+  height: 100%;
+  background: #ccc url("../images/bg.jpg");
+  background-size: cover;
+  font-family: sans-serif;
 }
 
 #mainContainer {
   width: 1000px;
   margin: auto;
+  position: relative;
   z-index: 1;
 }
 
-.socialHeader {
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0; 
+}
+
+.socialContainer {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
-  height: 80px;
   color: white;
 }
 
-.socialHeader p {
-  line-height: 65px;
+.socialContainer p {
+  height: 60px;
+  line-height: 60px;
+  font-size: 14px;
   position: relative;
-  right: 40px;
-  font-size: 13px;
+  right: 50px;
+  margin: 10px 0 0 0;
 }
 
-ul {
-  float: left;
+.socialMedia {
+  display: flex;
   list-style: none;
-  padding: 0;
+  margin-top: 5px;
 }
 
 .socialMedia li {
-  float: left;
-  font-size: 40px;
-  text-align: center;
-  position: relative;
-  left: 10px;
+  margin: 0 0 0 10px;
+  border-bottom: 4px solid #bbb;
 }
 
 .socialMedia i {
-  width: 60px;
-  height: 60px;
-  border-radius: 1px;
-  line-height: 60px;
-  border-bottom: 5px solid #7C7A7A;
-  margin-right: 10px;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  font-size: 40px;
 }
 
 .nav {
-  width: 100%;
-  height: 75px;
-}
-
-.navList {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 40px;
-  line-height: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  width: 240px;
+  height: 45px;
+  line-height: 45px;
+  background: #B4292E;
   text-align: center;
   color: white;
+  text-transform: uppercase;
+  border-bottom: 4px solid #bbb;
 }
 
-.navList li {
-  float: left;
-  background-color: #B4292E;
-  width: 240px;
-  border-bottom: 3px solid #898784;
-}
-
-.navList li:before, .navList li:after {
+.nav li:before, .nav li:after {
   content: "\2014";
   margin: 0 12px;
 }
 
 .slideShow {
+  margin-top: 15px;
+}
+
+
+.bgImg {
+  background: #ccc url("../images/top-image.png");
   width: 100%;
-  height: 350px;
-  margin: auto
-}
-
-.slideImage {
-  width: 98%;
-  height: 330px;
-  background: url("../images/top-image.png");
-  background-position: 40% 27%;
+  height: 360px;
   border: 10px solid white;
+  background-position: 30% 25%;
+  position: relative;
+  z-index: 2;
 }
 
-.slideImage img {
-  width: 380px;
-  height: 240px;
+.overLapImg {
   position: relative;
-  top: 45px;
-  left: 20px;
+  top: 60px;
+  left: 30px;
 }
+
+.slideBtns {
+  width: 10%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.slideBtns input {
+  margin-right: 10px;
+}
+
+.articles {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.articles div {
+  width: 325px;
+  height: 330px;
+  background: #FDFDFD;
+  overflow: auto;
+  padding: 0 20px;
+  border-bottom: 4px solid #ccc;
+}
+
+#sk8_container {
+  width: 100%;
+  margin:auto;
+  margin-top: 20px;
+}
+
+#sk8_container:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.skatersImg {
+  position:relative;
+}
+
+.skatersImg div {
+  color: white;
+  width: 325px;
+  height: 250px;
+  line-height: 40px;
+  padding-top: 90px;
+  text-align: center;
+  float: left;
+  border: 2px solid white;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.skatersImg div:first-child {
+  background-image: url("../images/sk8er-4.png");
+  background-position: 80% 10%;
+  margin-right: 13px;
+}
+
+.skatersImg div:nth-child(2) {
+  background-image: url("../images/sk8er-3.png");
+  background-size: 325px 250px;
+  margin-right: 13px;
+}
+
+.skatersImg div:nth-child(3) {
+  background-image: url("../images/sk8er-1.png");
+  clear: left;
+  width: 663px;
+  margin-right: 12px;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-size: 665px 250px;
+  padding-top: 110px;
+  font-size: 40px;
+}
+
+.skatersImg div:nth-child(4) {
+  background-image: url("../images/sk8er-2.png");
+  background-repeat: no-repeat;
+  background-size: 500px 520px;
+  background-position: 100% 10%;
+  height: 510px;
+  line-height: 50px;
+  margin-top: -250px;
+  font-size: 40px;
+  padding-top: 220px; 
+}
+
+
 
