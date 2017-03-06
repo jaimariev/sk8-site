@@ -1,0 +1,28 @@
+.socialmediabottom i {
+ width:30px;
+ height:30px;
+ text-align:center;
+ line-height:30px;
+
+}
+
+.socialcontainerbottom > ul {
+ display:flex;
+ justify-content:flex-start;
+ list-style-type:none;
+}
+
+#container4 {
+  width: 600px;
+}
+
+.words {
+  width: 300px;
+  display: inline-block;
+}
+
+
+.contactusform form{
+  width: 200px;
+  float: right;
+}
